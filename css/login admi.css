@@ -1,0 +1,121 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #ffbbbb;
+    display: flex;
+    flex-direction: column; /* apilar elementos verticalmente */
+    justify-content: space-between; /* footer se mantenga en la parte inferior */
+    height: 100vh; /* Altura completa */
+    margin: 0;
+}
+
+nav {
+    background-color: #760606;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Espaciado interno */
+    position: fixed; /* Fijar el nav en la parte superior */
+    width: 100%; 
+    top: 0; /* Mantener en la parte superior */
+    z-index: 1000; /* Asegurarse de que esté en frente */
+}
+
+img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.login {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ancho del 90% para pantallas pequeñas */
+    max-width: 400px; /* Máximo ancho en computadoras */
+    margin-top: 180px; /* Margen superior para no cubrir el nav */
+    margin-bottom: 180px ; /* Permitir que el contenido ocupe espacio */
+    margin-left: 34%;
+}
+
+h2 {
+    text-align: center;
+    color: #760606; 
+}
+
+.form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #940909;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; 
+}
+
+button:hover {
+    background-color: #7e0909;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #c71c1c;
+    color: white;
+    padding: 20px 0; /* Ajustar padding para que se vea bien */
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%; /* Asegurarse de que ocupe todo el ancho */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.redes img {
+    width: 30px; 
+    height: 30px; 
+}
+
+a {
+    color: #fff; 
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+@media (max-width: 600px) {
+    nav {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .login {
+        padding: 15px; /* Menos padding en móviles */
+    }
+
+    button {
+        font-size: 0.9rem; 
+    }
+}

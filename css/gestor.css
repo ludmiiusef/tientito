@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f2b8b8;
+}
+
+
+nav {
+    background-color:#760606;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px; /* Limitar el ancho máximo */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: #c71c1c;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.redes img {
+    width: 30px; 
+    height: 30px; 
+}
+
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+/* Media Queries para adaptabilidad */
+@media (max-width: 600px) {
+    input, textarea, button {
+        width: 90%; /* Ancho más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+    }
+    
+    button {
+        padding: 8px 16px; /* Ajuste de padding en botones */
+    }
+}

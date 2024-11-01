@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="./css/gestor.css">
+</head>
+<body>
+    <nav>
+   
+        <img src="./assets/Puaj!.png" alt="Logo PUAJ!"> 
+    <div>
+            <a class="nav-link" href="./index.html">Inicio</a>
+            <a class="nav-link" href="./productos.html">Productos</a>
+            <a class="nav-link" href="./soporte.html">Soporte</a>
+    </div>
+</nav>
+
+    <h1>Gestión de Productos</h1>
+    <form id="productForm">
+        <input type="text" id="categoria" placeholder="Categoría" required>
+        <input type="text" id="imagen" placeholder="URL de Imagen" required>
+        <input type="text" id="nombre" placeholder="Nombre del Producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="text" id="descripcion" placeholder="Descripcion" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+        <a href="productos.html" class="view-products-link">Ver Productos</a>
+    </div>
+    <script src="gestor.js"></script>
+        <tbody>
+            <!-- Los productos se cargarán aquí -->
+        </tbody>
+    </table>
+    <footer>
+        <div class="footer-content">
+            <div class="redes">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="Twitter" />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Teléfono: (+54) 9 260 0788899</p>
+                <p><a href="contacto.html">Formulario de contacto</a></p>
+            </div>
+            <div class="policies">
+                <p><a href="politica-privacidad.html">Política de privacidad / Terminos de uso</a></p>
+            </div>
+        </div>
+    </footer>
+   <script src="./js/datos.js"></script>
+    <script src="./js/gestor.js"></script>
+</body>
+</html>

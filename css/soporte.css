@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5c5c5;
+}
+
+nav {
+    background-color: #760606;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Para que los inputs ocupen el 100% del contenedor */
+}
+
+button {
+    padding: 10px;
+    background-color: #990909;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia la dirección del nav en pantallas pequeñas */
+        align-items: flex-start; /* Alinea a la izquierda */
+    }
+    
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    h3 {
+        font-size: 1.2rem; 
+    }
+
+    .container {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 1.2rem; 
+    }
+    
+    button {
+        padding: 8px; /* Reduce el tamaño del botón */
+    }
+
+    input, textarea {
+        font-size: 0.9rem; 
+    }
+}
